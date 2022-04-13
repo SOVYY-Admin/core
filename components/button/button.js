@@ -1,16 +1,14 @@
 import React from "react";
 import PropTypes from 'prop-types';
 import { Icon } from '../icon/icon';
-import classes from "./button.css";
-
-// className={`${styles[`button`]} ${styles[`${size}`]} ${styles[`${color}-${variant}`]} ${styling}`}
+import styles from "./button.module.css";
 
  export const Button = ({ color, variant, size, label, startIcon, endIcon, onClick, styling, ...props }) => {
   return (
     <button
       type="button"
       onClick={onClick}
-      className={`sy-button sy-button--${size} sy-button--${color}-${variant} ${styling}`}
+      className={`${styles[`button`]} ${styles[`${size}`]} ${styles[`${color}-${variant}`]} ${styling}`}
       {...props}
     >
       {startIcon === undefined ? '' : <Icon icon={startIcon} size="flex" styling="mr-0.5em"/>}

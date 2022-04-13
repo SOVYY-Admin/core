@@ -95,5 +95,5 @@ module.exports = {
       },
     },
   },
-  plugins: [],
+  plugins: [require('tailwindcss-global-dark')],
 }
