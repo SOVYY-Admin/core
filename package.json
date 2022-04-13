@@ -13,6 +13,8 @@
     "deploy": "gh-pages -d storybook-static"
   },
   "dependencies": {
+    "@storybook/addons": "^6.4.21",
+    "@storybook/theming": "^6.4.21",
     "feather-icons-react": "^0.5.0",
     "next": "12.1.5",
     "next-themes": "^0.1.1",
