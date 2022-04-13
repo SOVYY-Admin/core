@@ -1,0 +1,19 @@
+/* chip */
+
+.button {@apply font-display box-border inline-flex items-center justify-center font-body font-semibold cursor-pointer inline-block rounded;}
+
+/* size */ 
+
+.small {@apply h-24px text-button px-2;}
+.medium {@apply h-32px text-button px-4;}
+.large {@apply h-48px text-button px-6;}
+
+/* color & variant */
+
+.primary-contained {@apply bg-primary-500 text-white hover:bg-primary-600 active:bg-primary-700;}
+.primary-outlined {@apply bg-none text-primary-500 border-2 border-primary-500 hover:bg-primary-500 hover:text-white active:border-primary-700 active:bg-primary-700;}
+.primary-ghost {@apply bg-transparent text-primary-500 hover:bg-primary-500/20 active:bg-primary-500/30;}
+
+.secondary-contained {@apply bg-neutral-200 text-black hover:bg-neutral-300 active:bg-neutral-400;}
+.secondary-outlined {@apply bg-none text-black border-2 border-neutral-200 hover:bg-neutral-200 active:border-neutral-300 active:bg-neutral-300;}
+.secondary-ghost {@apply bg-transparent text-black hover:bg-neutral-500/20 active:bg-neutral-500/30;}

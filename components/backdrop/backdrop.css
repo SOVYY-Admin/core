@@ -1,0 +1,15 @@
+/*  template */
+
+.backdrop {@apply absolute w-full h-full top-0 left-0 z-10}
+
+/* color */
+
+.backdrop--color--black {@apply bg-black}
+.backdrop--color--white {@apply bg-white}
+
+/* opacity */
+
+.backdrop--opacity--0 {@apply opacity-0}
+.backdrop--opacity--50 {@apply opacity-50}
+.backdrop--opacity--20 {@apply opacity-20}
+.backdrop--opacity--80 {@apply opacity-80}

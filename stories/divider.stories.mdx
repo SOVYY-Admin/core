@@ -1,0 +1,28 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import { Divider } from '../components/divider/divider';
+import { Stack } from '../components/stack/stack';
+
+<Meta title="Components/Layout/Divider" component={Divider} />
+
+export const Template  = (args) => <Stack {...args}>Item <Divider {...args} />Item</Stack>;
+
+# Divider
+
+<Canvas>
+      <Story 
+    name="Horizontal"
+    args={{ 
+    orientation: 'horizontal',
+    }}>
+    {Template.bind({})}
+   </Story>
+       <Story 
+    name="Vertical"
+    args={{ 
+    orientation: 'vertical',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>

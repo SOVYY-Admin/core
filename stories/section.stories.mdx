@@ -1,0 +1,50 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Section } from '../components/section/section';
+
+<Meta title="Components/Layout/Section" component={Section} />
+
+export const Template = (args) => <Section {...args}><div className="w-full py-24 bg-blue-300 text-white text-center">Content</div></Section>;
+
+
+
+# Section
+
+<Canvas>
+    <Story 
+    name="Small"
+    args={{ 
+  size: 'small',
+  spacing: 'medium',
+  styling: 'bg-blue-200',
+    }}>
+    {Template.bind({})}
+   </Story>
+       <Story 
+    name="Medium"
+    args={{ 
+  size: 'medium',
+  spacing: 'medium',
+  styling: 'bg-blue-200',
+    }}>
+    {Template.bind({})}
+   </Story>
+          <Story 
+    name="Large"
+    args={{ 
+  size: 'large',
+  spacing: 'medium',
+  styling: 'bg-blue-200',
+    }}>
+    {Template.bind({})}
+   </Story>
+             <Story 
+    name="Full"
+    args={{ 
+  size: 'full',
+  spacing: 'medium',
+  styling: 'bg-blue-200',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>

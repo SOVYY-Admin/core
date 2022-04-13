@@ -1,0 +1,169 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import { Button } from '../components/button/button';
+
+<Meta title="Components/DataInput/Button" component={Button} />
+
+export const Template = (args) => <Button {...args} />;
+
+# Button
+
+With `MDX`, we can define a story for `Button` right in the middle of our
+Markdown documentation.
+
+## Usage
+
+```
+import { Button } from '../components/button/button';
+
+<Button label="" color="" variant="" size="" onClick="myFunction()" />
+```
+
+## Colors
+
+
+<Canvas>
+    <Story 
+    name="Primary"
+    args={{ 
+      label: 'primary',
+      color: 'primary',
+      variant: 'contained',
+      size: 'medium',
+      startIcon: '',
+      endIcon: '',
+      onClick: undefined,
+    }}>
+    {Template.bind({})}
+   </Story>
+  <Story 
+    name="Secondary"
+    args={{ 
+      label: 'secondary',
+      color: 'secondary',
+      variant: 'contained',
+      size: 'medium',
+      startIcon: '',
+      endIcon: '',
+      onClick: undefined,
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+## Sizes
+
+- medium is the secondary size and should cover most of the cases.
+- Use large size in special cases to highlight the button.
+- Use small in tight spaces.
+
+<Canvas>
+  <Story 
+    name="Small"
+    args={{ 
+      label: 'small',
+      color: 'secondary',
+      variant: 'contained',
+      size: 'small',
+      startIcon: '',
+      endIcon: '',
+      onClick: undefined,
+    }}>
+    {Template.bind({})}
+   </Story>
+     <Story 
+    name="Medium"
+    args={{ 
+      label: 'medium',
+      color: 'secondary',
+      variant: 'contained',
+      size: 'medium',
+      startIcon: '',
+      endIcon: '',
+      onClick: undefined,
+    }}>
+    {Template.bind({})}
+   </Story>
+  <Story 
+    name="Large"
+    args={{ 
+      label: 'large',
+      color: 'secondary',
+      variant: 'contained',
+      startIcon: '',
+      endIcon: '',
+      size: 'large',
+      onClick: undefined,
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+
+## Variants
+
+- secondary variant and should cover most of the cases.
+- Use the Primary variant to highlight the most important action.
+
+<Canvas>
+  <Story 
+    name="Contained"
+    args={{ 
+      label: 'contained',
+      color: 'secondary',
+      variant: 'contained',
+      size: 'medium',
+      startIcon: '',
+      endIcon: '',
+      onClick: undefined,
+    }}>
+    {Template.bind({})}
+   </Story>
+     <Story 
+    name="Outlined"
+    args={{ 
+      label: 'outlined',
+      color: 'secondary',
+      variant: 'outlined',
+      size: 'medium',
+      startIcon: '',
+      endIcon: '',
+      onClick: undefined,
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+## Icon
+
+<Canvas>
+  <Story 
+    name="startIcon"
+    args={{ 
+      label: 'startIcon',
+      color: 'secondary',
+      variant: 'contained',
+      size: 'medium',
+      startIcon: 'image',
+      endIcon: '',
+      onClick: undefined,
+    }}>
+    {Template.bind({})}
+   </Story>
+     <Story 
+    name="endIcon"
+    args={{ 
+      label: 'endIcon',
+      color: 'secondary',
+      variant: 'contained',
+      size: 'medium',
+      startIcon: '',
+      endIcon: 'image',
+      onClick: undefined,
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.

@@ -1,0 +1,24 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+
+import { IconButton } from '../components/iconbutton/iconbutton';
+
+<Meta title="Components/DataInput/IconButton" component={IconButton} />
+
+export const Template = (args) => <IconButton {...args} />;
+
+# IconButton
+
+<Canvas>
+    <Story 
+    name="Default"
+    args={{ 
+  icon: 'x',
+  color: 'primary',
+  variant: 'contained',
+  size: 'medium',
+  onClick: undefined,
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>

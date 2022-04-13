@@ -1,0 +1,14 @@
+/* divider */
+
+.sy-divider { }
+
+/* orientation */
+
+.sy-divider--vertical {@apply h-0.5;}
+
+.sy-divider--horizontal {@apply w-0.5 h-auto;}
+
+/* color */
+
+.sy-divider--default {@apply bg-neutral-200;}
+.sy-divider--primary {@apply bg-primary-500;}

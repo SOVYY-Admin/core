@@ -1,0 +1,35 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Grid } from '../components/grid/grid';
+
+<Meta title="Components/Layout/Grid" component={Grid} />
+
+export const Template = (args) => 
+<Grid {...args}>  
+  <div className="bg-blue-500"><div className="h-24"/></div>
+  <div className="bg-blue-500"><div className="h-24"/></div>
+  <div className="bg-blue-500"><div className="h-24"/></div>
+  <div className="bg-blue-500"><div className="h-24"/></div>
+  <div className="bg-blue-500"><div className="h-24"/></div>
+  <div className="bg-blue-500"><div className="h-24"/></div>
+  <div className="bg-blue-500"><div className="h-24"/></div>
+  <div className="bg-blue-500"><div className="h-24"/></div>
+  <div className="bg-blue-500"><div className="h-24"/></div>
+  <div className="bg-blue-500"><div className="h-24"/></div>
+  <div className="bg-blue-500"><div className="h-24"/></div>
+  <div className="bg-blue-500"><div className="h-24"/></div>
+</Grid>;
+
+# Grid
+
+<Canvas>
+    <Story 
+    name="Default"
+    args={{
+      cols: '4',
+      gap: '2',
+      styling: '',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>

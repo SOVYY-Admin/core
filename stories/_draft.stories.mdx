@@ -1,0 +1,28 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Draft } from '../components/draft/draft';
+
+<Meta title="Components/_Draft" component={Draft} />
+
+export const Template = (args) => <Draft {...args} />;
+
+# Draft
+
+<Canvas>
+    <Story 
+    name="_Draft"
+    args={{
+      select: 'A',
+      string: 'String',
+      boolean: true,
+      object: {  
+        "data":[
+          {"id":1,"label":"A"},
+          {"id":2,"label":"B"},
+          {"id":3,"label":"C"},
+          ],
+      }
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>

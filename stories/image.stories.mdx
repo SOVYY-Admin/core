@@ -1,0 +1,33 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Button, Chip, Section, Divider, Grid, Header, Icon, IconButton, Stack, TextLink, Text, Image, Backdrop } from '..//core';
+
+<Meta title="Components/DataDisplay/Image" component={Image} />
+
+export const Template = (args) => 
+<Section>
+  <Grid cols="2" gap="12"> 
+    <Image {...args} className="h-96" />
+    <div>
+      <Text variant="h6">Lorem Ipsum</Text>
+      <Text variant="b2">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+      </Text>
+    </div> 
+  </Grid>
+</Section>
+
+# Image
+
+<Canvas>
+    <Story 
+    name="Default"
+    args={{
+      variant: 'flex',
+      src: 'https://images.unsplash.com/photo-1550859492-d5da9d8e45f3?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=2370&q=80',
+      backdropcolor: 'black',
+      backdropopacity: '0',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>

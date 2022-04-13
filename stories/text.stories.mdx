@@ -1,0 +1,124 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Text } from '../components/text/text';
+
+<Meta title="Components/DataDisplay/Text" component={Text} />
+
+export const Template = (args) => <Text {...args}>Lorem Ipsum</Text>;
+
+# Headline 1
+
+<Canvas>
+    <Story 
+    name="Headline 1"
+    args={{
+      tag: 'h1',
+      variant: 'h1',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+# Headline 2
+
+<Canvas>
+    <Story 
+    name="Headline 2"
+    args={{
+      tag: 'h2',
+      variant: 'h2',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+# Headline 3
+
+<Canvas>
+    <Story 
+    name="Headline 3"
+    args={{
+      tag: 'h3',
+      variant: 'h3',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+# Headline 4
+
+<Canvas>
+    <Story 
+    name="Headline 4"
+    args={{
+      tag: 'h4',
+      variant: 'h4',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+# Headline 5
+
+<Canvas>
+    <Story 
+    name="Headline 5"
+    args={{
+      tag: 'h5',
+      variant: 'h5',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+# Headline 6
+
+<Canvas>
+    <Story 
+    name="Headline 6"
+    args={{
+      tag: 'h6',
+      variant: 'h6',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+# Body
+
+<Canvas>
+    <Story 
+    name="Body"
+    args={{
+      tag: 'p',
+      variant: 'body',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+# Body 2
+
+<Canvas>
+    <Story 
+    name="Body 2"
+    args={{
+      tag: 'p',
+      variant: 'body2',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
+
+# Caption
+
+<Canvas>
+    <Story 
+    name="Caption"
+    args={{
+      tag: 'p',
+      variant: 'caption',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>

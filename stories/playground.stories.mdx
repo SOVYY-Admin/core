@@ -1,0 +1,24 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import Playground from '../pages/playground';
+
+<Meta 
+title="Components/Playground" 
+component={Playground}
+ parameters={{
+    layout: 'fullscreen',
+  }}
+  />
+
+export const Template = (args) => <Playground {...args} />;
+
+# Playground
+
+<Canvas>
+    <Story 
+    name="Playground"
+    args={{
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>

@@ -1,0 +1,30 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { Stack } from '../components/stack/stack';
+
+<Meta title="Components/Layout/Stack" component={Stack} />
+
+export const Template = (args) => <Stack {...args}><span className="w-5 h-5 bg-blue-300" /><span className="w-5 h-5 bg-blue-300" /><span className="w-5 h-5 bg-blue-300" /> </Stack>;
+
+
+
+# Stack
+
+<Canvas>
+    <Story 
+    name="Horizontal"
+    args={{ 
+      orientation: 'horizontal',
+      gap: '2',
+    }}>
+    {Template.bind({})}
+   </Story>
+       <Story 
+    name="Vertical"
+    args={{ 
+      orientation: 'vertical',
+      gap: '2',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>

@@ -1,0 +1,21 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { TextLink } from '../components/textlink/textlink';
+
+<Meta title="Components/Navigation/TextLink" component={TextLink} />
+
+export const Template = (args) => <TextLink {...args} />;
+
+# Link
+
+<Canvas>
+    <Story 
+    name="Default"
+    args={{
+      label: 'TextLink',
+      href: '',
+      inline: false,
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>

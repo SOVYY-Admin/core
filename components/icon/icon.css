@@ -1,0 +1,11 @@
+/* icon */
+
+.sy-icon {}
+
+/* size */
+
+.sy-icon--flex {@apply w-1.25em h-1.25em;}
+.sy-icon--4 {@apply w-4 h-4;}
+.sy-icon--6 {@apply w-6 h-6;}
+.sy-icon--8 {@apply w-8 h-8;}
+.sy-icon--12 {@apply w-12 h-12;}
