@@ -8,7 +8,12 @@ import styles from "./button.module.css";
     <button
       type="button"
       onClick={onClick}
-      className={`${styles[`button`]} ${styles[`${size}`]} ${styles[`${color}-${variant}`]} ${styling}`}
+      className={`
+      ${styles[`sy--button`]} 
+      ${styles[`sy--size--${size}`]} 
+      ${styles[`sy--variant--${color}-${variant}`]} 
+      ${styling}  
+      `}
       {...props}
     >
       {startIcon === undefined ? '' : <Icon icon={startIcon} size="flex" styling="mr-0.5em"/>}

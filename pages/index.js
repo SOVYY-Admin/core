@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Button } from '../components/button/button';
+import { Button, Chip, Section, Divider, Grid, Header, Icon, IconButton, Stack, TextLink, Text, IMG, Backdrop } from '../core';
 import { useState } from 'react';
 import { useTheme } from 'next-themes'
 
@@ -21,6 +21,18 @@ export default function Home() {
 
       <Button label="Theme" onClick={toggleTheme} />
       <div className=' w-96 h-96 mt-48 bg-red-500 dark:bg-blue-500'/>
+
+      <Section>
+  <Grid cols="2" gap="12">  
+    <IMG variant="fix" className="h-96" />
+    <div>
+      <Text variant="h6">Lorem Ipsum</Text>
+      <Text variant="b2">
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
+      </Text>
+    </div> 
+  </Grid>
+</Section>
 
 
 </div>

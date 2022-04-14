@@ -1,11 +1,11 @@
 /* icon */
 
-.icon {}
+.sy--icon {}
 
 /* size */
 
-.icon--flex {@apply w-1.25em h-1.25em;}
-.icon--4 {@apply w-4 h-4;}
-.icon--6 {@apply w-6 h-6;}
-.icon--8 {@apply w-8 h-8;}
-.icon--12 {@apply w-12 h-12;}
+.sy--size--flex {@apply w-1.25em h-1.25em;}
+.sy--size--4 {@apply w-4 h-4;}
+.sy--size--6 {@apply w-6 h-6;}
+.sy--size--8 {@apply w-8 h-8;}
+.sy--size--12 {@apply w-12 h-12;}

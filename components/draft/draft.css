@@ -1,7 +1,7 @@
 /*  template */
 
-.sy-draft {@apply text-black}
+.sy--draft {@apply text-black}
 
 /* attribute */
 
-.sy-draft--attribute {@apply text-black}
+.sy--attribute--value {@apply text-black}

@@ -1,11 +1,16 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import classes from "./section.css";
+import styles from "./section.module.css";
 
  export const Section = ({ size, spacing, styling, ...props }) => {
   return (
     <div
-      className={`sy-section sy-section--${size} sy-section--spacing--${spacing} ${styling}`}
+      className={`
+      ${styles[`sy--button`]} 
+      ${styles[`sy--size--${size}`]} 
+      ${styles[`sy--spacing--${spacing}`]} 
+      ${styling}  
+      `}
       {...props}
     >
     </div>

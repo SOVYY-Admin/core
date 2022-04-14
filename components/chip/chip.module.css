@@ -1,0 +1,16 @@
+/* chip */
+
+.sy--chip {@apply box-border font-body inline-flex items-center justify-center font-medium rounded;}
+
+/* size */ 
+
+.sy--size--small {@apply h-24px  text-button px-1;}
+.sy--size--medium {@apply h-32px  text-button px-2;}
+.sy--size--large {@apply h-48px  text-button px-3;}
+
+/* color & variant */
+
+.sy--variant--default-contained {@apply bg-neutral-200 text-black}
+
+.sy--variant--default-outlined {@apply text-neutral-400 border-2 border-neutral-200}
+       

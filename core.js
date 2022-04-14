@@ -9,5 +9,5 @@ export { IconButton } from './components/iconbutton/iconbutton';
 export { Stack } from './components/stack/stack';
 export { TextLink } from './components/textlink/textlink';
 export { Text } from './components/text/text';
-export { Image } from './components/image/image';
+export { IMG } from './components/img/img';
 export { Backdrop } from './components/backdrop/backdrop';

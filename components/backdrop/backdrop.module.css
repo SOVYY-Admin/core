@@ -1,0 +1,15 @@
+/*  template */
+
+.sy--backdrop {@apply absolute w-full h-full top-0 left-0 z-10}
+
+/* color */
+
+.sy--color--black {@apply bg-black}
+.sy--color--white {@apply bg-white}
+
+/* opacity */
+
+.sy--opacity--0 {@apply opacity-0}
+.sy--opacity--50 {@apply opacity-50}
+.sy--opacity--20 {@apply opacity-20}
+.sy--opacity--80 {@apply opacity-80}

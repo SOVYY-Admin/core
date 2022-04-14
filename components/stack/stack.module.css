@@ -1,0 +1,20 @@
+/* stack */
+
+.sy--stack { }
+
+/* orientation */
+
+.sy--orietation--horizontal {@apply flex flex-row;}
+
+.sy--orietation--vertical {@apply flex flex-col;}
+
+/* gap */
+
+.sy--gap--flex {@apply justify-between;}
+.sy--gap--0 {@apply gap-0;}
+.sy--gap--1 {@apply gap-1;}
+.sy--gap--2 {@apply gap-2;}
+.sy--gap--3 {@apply gap-3;}
+.sy--gap--4 {@apply gap-4;}
+.sy--gap--8 {@apply gap-8;}
+.sy--gap--12 {@apply gap-12;}

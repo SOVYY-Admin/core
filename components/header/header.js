@@ -1,6 +1,6 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import classes from "./header.css";
+import styles from "./header.module.css";
 import Link from 'next/link'
 import { Stack } from '../stack/stack';
 import { TextLink } from '../textlink/textlink';
@@ -8,8 +8,12 @@ import { Button } from '../button/button';
 
  export const Header = ({data, ...props }) => {
   return (
-    <div className={`sy-header`}
-    {...props}>
+    <div 
+    className={`
+    ${styles[`sy--header`]} 
+    `}
+    {...props}
+    >
       <Stack gap="flex" styling="items-center">
       <Stack gap="12" styling="items-center">
       <Stack gap="2" styling="items-center">

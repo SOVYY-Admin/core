@@ -1,0 +1,22 @@
+/*  template */
+
+.sy--grid {@apply grid}
+
+/* cols */
+
+.sy--cols--1 {@apply grid-cols-1 md:grid-cols-1 lg:grid-cols-1 ;}
+.sy--cols--2 {@apply grid-cols-1 md:grid-cols-2 lg:grid-cols-2;}
+.sy--cols--3 {@apply grid-cols-1 md:grid-cols-2 lg:grid-cols-3;}
+.sy--cols--4 {@apply grid-cols-1 md:grid-cols-2 lg:grid-cols-4;}
+.sy--cols--8 {@apply grid-cols-1 md:grid-cols-2 lg:grid-cols-8;}
+.sy--cols--12 {@apply grid-cols-1 md:grid-cols-2 lg:grid-cols-12;}
+
+/* gap */
+
+.sy--gap--0 {@apply gap-0;}
+.sy--gap--1 {@apply gap-1;}
+.sy--gap--2 {@apply gap-2;}
+.sy--gap--3 {@apply gap-3;}
+.sy--gap--4 {@apply gap-4;}
+.sy--gap--8 {@apply gap-8;}
+.sy--gap--12 {@apply gap-12;}

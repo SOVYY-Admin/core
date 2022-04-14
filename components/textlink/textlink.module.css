@@ -1,0 +1,7 @@
+/* link */
+
+.sy--textlink {@apply text-black hover:underline}
+
+/* inline */
+
+.sy--inline {@apply text-black underline}

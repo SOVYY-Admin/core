@@ -1,10 +1,15 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import classes from "./grid.css";
+import styles from "./grid.module.css";
 
  export const Grid = ({ cols, gap, children, styling, ...props }) => {
   return (
-    <div className={`sy-grid sy-grid--cols-${cols} sy-grid--gap-${gap}  ${styling}`}>
+    <div className={`
+    ${styles[`sy--grid`]} 
+    ${styles[`sy--cols--${cols}`]} 
+    ${styles[`sy--gap--${gap}`]} 
+    ${styling} 
+    `}>
       {children}
     </div> 
   );

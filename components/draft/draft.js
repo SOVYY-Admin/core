@@ -4,7 +4,11 @@ import styles from "./draft.css";
 
  export const Draft = ({ select, string, boolean, object, ...props }) => {
   return (
-    <div className={`sy-draft sy-draft--${select}`}>
+    <div className={`
+    ${styles[`sy--draft`]} 
+    ${styles[`sy--attribute--${select}`]} 
+    ${styling}  
+    `}>
       {select} <br />
       {string} <br />
       { boolean === true ? <span>Boolean</span> : ""} <br />
@@ -18,6 +22,7 @@ Draft.propTypes = {
   string: PropTypes.string,
   boolean: PropTypes.bool,
   object: PropTypes.object,
+  styling: PropTypes.string,
 };
 
 Draft.defaultProps = {
@@ -30,5 +35,6 @@ Draft.defaultProps = {
       {"id":2,"label":"B"},
       {"id":3,"label":"C"},
       ],
-  }
+  },
+  styling: '',
 };

@@ -1,11 +1,16 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import classes from "./stack.css";
+import styles from "./stack.module.css";
 
  export const Stack = ({ orientation, gap, children, styling, ...props }) => {
   return (
     <div
-      className={`sy-stack sy-stack--${orientation} sy-stack--gap-${gap} ${styling}`}
+      className={`
+      ${styles[`sy--stack`]} 
+      ${styles[`sy--orientation--${orientation}`]} 
+      ${styles[`sy--gap--${gap}`]} 
+      ${styling}  
+      `}
       {...props}
     >
       {children}

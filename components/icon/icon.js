@@ -5,7 +5,12 @@ import FeatherIcon from 'feather-icons-react';
 
  export const Icon = ({ size, icon, styling, ...props }) => {
   return (
-    <FeatherIcon icon={icon} className={`${styles[`icon`]} ${styles[`icon--${size}`]} ${styling}`}
+    <FeatherIcon icon={icon} 
+    className={`
+    ${styles[`sy--icon`]} 
+    ${styles[`sy--size--${size}`]} 
+    ${styling}
+    `}
     {...props}/>
   );
 };
