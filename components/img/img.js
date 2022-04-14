@@ -13,7 +13,8 @@ import { Backdrop } from '../backdrop/backdrop';
         src={src} 
         layout="responsive"
         width={width} 
-        height={height} 
+        height={height}
+        unoptimized
         className={`
         ${styles[`sy--image`]} 
         ${styling}
@@ -28,6 +29,7 @@ import { Backdrop } from '../backdrop/backdrop';
       <Image
       src={src} 
       layout="fill"
+      unoptimized
       className={`
       ${styles[`sy--image`]} 
       ${styling}

@@ -6,7 +6,7 @@ import styles from "./section.module.css";
   return (
     <div
       className={`
-      ${styles[`sy--button`]} 
+      ${styles[`sy--section`]} 
       ${styles[`sy--size--${size}`]} 
       ${styles[`sy--spacing--${spacing}`]} 
       ${styling}  
