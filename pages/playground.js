@@ -1,5 +1,5 @@
 import Head from 'next/head'
-import { Button, Chip, Section, Divider, Grid, Header, Icon, IconButton, Stack, TextLink, Text, Image, Backdrop } from '../core';
+import { Button, Chip, Section, Divider, Grid, Header, Icon, IconButton, Stack, TextLink, Text, IMG, Backdrop } from '../core';
 import Split from 'react-split'
 import { useState } from 'react';
 // import theme
@@ -39,7 +39,7 @@ export default function Playground() {
           Es ist nie zu spät → Versuch mal was neues
           </div>
           <div className="overflow-hidden">
-          <Image
+          <IMG
           variant="flex"
           src="https://images.unsplash.com/photo-1604076913837-52ab5629fba9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
           styling="p-12"
@@ -54,7 +54,7 @@ export default function Playground() {
             ? <IconButton icon="plus" variant="contained" color="secondary" onClick={() => setCollapsedIndex(0)} styling="absolute z-30 bottom-3 left-3" />
             : <IconButton icon="minus" variant="contained" color="secondary" onClick={() => setCollapsedIndex(1)} styling="absolute z-30 bottom-3 left-3" /> 
             }
-          </Image>
+          </IMG>
           </div>
         </Split>          
       </Section>

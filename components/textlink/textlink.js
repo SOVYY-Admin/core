@@ -3,7 +3,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link'
 import styles from "./textlink.module.css";
 
- export const TextLink = ({ label, href, inline, ...props }) => {
+ export const TextLink = ({ label, href, inline, styling, ...props }) => {
   return (
     <Link href={href}>
       <a className={`      

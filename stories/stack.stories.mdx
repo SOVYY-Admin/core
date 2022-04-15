@@ -2,9 +2,20 @@
 import { Canvas, Meta, Story } from '@storybook/addon-docs';
 import { Stack } from '../components/stack/stack';
 
-<Meta title="Components/Layout/Stack" component={Stack} />
+<Meta 
+  title="Components/Layout/Stack" 
+  component={Stack}
+  argTypes={{
+    numberOfChildren: { type: "number", defaultValue: 4 },
+  }}
+/>
 
-export const Template = (args) => <Stack {...args}><span className="w-5 h-5 bg-blue-300" /><span className="w-5 h-5 bg-blue-300" /><span className="w-5 h-5 bg-blue-300" /> </Stack>;
+export const Template = ({ numberOfChildren, ...args }) => 
+<Stack {...args}>
+  {[...Array(numberOfChildren).keys()].map(n => (
+    <span className="w-5 h-5 bg-blue-300" />
+  ))} 
+</Stack>;
 
 
 

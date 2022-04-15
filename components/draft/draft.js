@@ -1,8 +1,8 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import styles from "./draft.css";
+import styles from "./draft.module.css";
 
- export const Draft = ({ select, string, boolean, object, ...props }) => {
+ export const Draft = ({ select, string, boolean, object, styling, ...props }) => {
   return (
     <div className={`
     ${styles[`sy--draft`]} 

@@ -2,14 +2,14 @@ import React from "react";
 import PropTypes from 'prop-types';
 import styles from "./divider.module.css";
 
- export const Divider = ({ orientation, color, ...props }) => {
+ export const Divider = ({ orientation, color, styling, ...props }) => {
   return (
     <div
       className={`
       ${styles[`sy--divider`]} 
       ${styles[`sy--orientation--${orientation}`]} 
       ${styles[`sy--color--${color}`]} 
-      ${styling}  
+      ${styling}
       `}
       {...props}
     >

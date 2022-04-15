@@ -34,6 +34,17 @@ export default function Home() {
   </Grid>
 </Section>
 
+<Section>
+{(() => {
+  const count = 10;
+  const loop = [];
+  for (let i = 1; i < count; i++){
+    loop.push(<div className='p-4 bg-primary-500 text-white text-center mb-2'>{i}</div>)
+  }
+  return loop;
+})()}
+</Section>
+
 
 </div>
   )

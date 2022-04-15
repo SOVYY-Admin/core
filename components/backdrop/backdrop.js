@@ -5,10 +5,10 @@ import styles from "./backdrop.module.css";
  export const Backdrop = ({ color, opacity, styling, ...props }) => {
   return (
     <div className={`
-    ${styles[`sy--backdrop`]} 
-    ${styles[`sy--color--${color}`]} 
-    ${styles[`sy--opacity--${opacity }`]}
-    ${styling}
+      ${styles[`sy--backdrop`]} 
+      ${styles[`sy--color--${color}`]} 
+      ${styles[`sy--opacity--${opacity}`]}
+      ${styling}
     `}/>
   );
 };
