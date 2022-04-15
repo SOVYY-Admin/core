@@ -5,7 +5,6 @@
 /* size */
 
 .sy--size--flex {@apply w-1.25em h-1.25em;}
-.sy--size--4 {@apply w-4 h-4;}
-.sy--size--6 {@apply w-6 h-6;}
-.sy--size--8 {@apply w-8 h-8;}
-.sy--size--12 {@apply w-12 h-12;}
+.sy--size--small {@apply w-4 h-4;}
+.sy--size--medium {@apply w-6 h-6;}
+.sy--size--large {@apply w-8 h-8;}

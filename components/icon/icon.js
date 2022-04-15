@@ -16,13 +16,13 @@ import FeatherIcon from 'feather-icons-react';
 };
 
 Icon.propTypes = {
-  size: PropTypes.oneOf(['4', '6', '8', '12']),
+  size: PropTypes.oneOf(['small', 'medium', 'large', 'flex']),
   icon: PropTypes.string.isRequired,
   stylging: PropTypes.string,
 };
 
 Icon.defaultProps = {
-  size: '6',
+  size: 'medium',
   icon: 'image',
   styling: '',
 };

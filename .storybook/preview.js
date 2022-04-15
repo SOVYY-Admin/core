@@ -1,6 +1,9 @@
 import '../src/styles/global.css'
 
 export const parameters = {
+  previewTabs: {
+    'storybook/docs/panel': { index: -1 },
+  },
   actions: { argTypesRegex: "^on[A-Z].*" },
   darkMode: {
     classTarget: 'html',

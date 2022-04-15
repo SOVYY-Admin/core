@@ -9,7 +9,7 @@
 
 /* opacity */
 
-.sy--opacity--0 {@apply opacity-0}
-.sy--opacity--50 {@apply opacity-50}
-.sy--opacity--20 {@apply opacity-20}
-.sy--opacity--80 {@apply opacity-80}
+.sy--opacity--o0 {@apply opacity-0}
+.sy--opacity--o50 {@apply opacity-50}
+.sy--opacity--o20 {@apply opacity-20}
+.sy--opacity--o80 {@apply opacity-80}

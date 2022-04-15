@@ -38,15 +38,15 @@ export default function Playground() {
           <div className="relative text-black dark:text-white p-12 text-h1 overflow-hidden">
           Es ist nie zu spät → Versuch mal was neues
           </div>
-          <div className="overflow-hidden">
+          <div className="relative overflow-hidden">
           <IMG
           variant="flex"
           src="https://images.unsplash.com/photo-1604076913837-52ab5629fba9?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=987&q=80"
-          styling="p-12"
           backdropcolor="black"
           backdropopacity="50"
-          >
-            <div className='relative z-30'>
+          styling="absolute"
+          />
+            <div className='relative p-12 z-30'>
               <div className='text-h3 text-white w-96'>Es ist nie zu spät → Versuch mal was neues</div>
               <div className='text-body text-white mt-3 w-96'>{placeholder}</div>
             </div>
@@ -54,7 +54,7 @@ export default function Playground() {
             ? <IconButton icon="plus" variant="contained" color="secondary" onClick={() => setCollapsedIndex(0)} styling="absolute z-30 bottom-3 left-3" />
             : <IconButton icon="minus" variant="contained" color="secondary" onClick={() => setCollapsedIndex(1)} styling="absolute z-30 bottom-3 left-3" /> 
             }
-          </IMG>
+          
           </div>
         </Split>          
       </Section>

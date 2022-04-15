@@ -15,7 +15,7 @@ import styles from "./backdrop.module.css";
 
 Backdrop.propTypes = {
   color: PropTypes.oneOf(['black', 'white']),
-  opacity: PropTypes.oneOf(['0', '20', '50', '80']),
+  opacity: PropTypes.oneOf(['o0', 'o20', 'o50', 'o80']),
   styling: PropTypes.string,
 };
 
