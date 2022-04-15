@@ -18,7 +18,7 @@ import FeatherIcon from 'feather-icons-react';
 Icon.propTypes = {
   size: PropTypes.oneOf(['small', 'medium', 'large', 'flex']),
   icon: PropTypes.string.isRequired,
-  stylging: PropTypes.string,
+  styling: PropTypes.string,
 };
 
 Icon.defaultProps = {

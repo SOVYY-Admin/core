@@ -7,7 +7,7 @@ import { Backdrop } from '../backdrop/backdrop';
  export const IMG = ({ variant, src, width, height, styling, backdropcolor, backdropopacity, ...props }) => {
   if (variant === "fix") {
     return (
-      <div className={`w-full h-full ${styling}`}>
+      <div className={`relative w-full h-full ${styling}`}>
         <Backdrop color={backdropcolor} opacity={backdropopacity} />
         <Image
         src={src} 
@@ -17,14 +17,13 @@ import { Backdrop } from '../backdrop/backdrop';
         unoptimized
         className={`
         ${styles[`sy--image`]} 
-        ${styling}
         `}/>
       </div>
       
     );
   } else {
     return (
-      <div className={`w-full h-full min-h-image md:min-h-0 ${styling}`}>
+      <div className={`relative w-full h-full min-h-image md:min-h-0 ${styling}`}>
       <Backdrop color={backdropcolor} opacity={backdropopacity} />
       <Image
       src={src} 

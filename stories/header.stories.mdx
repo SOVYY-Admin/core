@@ -12,18 +12,25 @@ export const Template = (args) => <Header {...args} />;
     <Story 
     name="Default"
     args={{
-  data: {
-    "logo":"https://placeholder.com/wp-content/uploads/2018/10/placeholder-1.png",
-    "links":[
-    {"id":1,"label":"Link 1","href":"/1"},
-    {"id":2,"label":"Link 2","href":"/2"},
-    {"id":3,"label":"Link 3","href":"/3"},
-    ],
-    "buttons":[
-      {"id":1,"label":"Secondary", "size":"medium", "variant":"outlined", "color":"primary","endIcon":""},
-      {"id":2,"label":"Primary", "size":"medium", "variant":"contained", "color":"primary","endIcon":"arrow-right"},
-    ]
-  }
+    data: {
+      "Logo":{
+        "url": "/uploads/logo_42e0459919.svg",
+        "href":"/logo"
+      },
+      "LogoDarkmode":{
+        "url": "/uploads/logo_65747cef2b.svg",
+        "href":"/logo"
+      },
+      "Links":[
+      {"id":1,"label":"Link 1","href":"/1"},
+      {"id":2,"label":"Link 2","href":"/2"},
+      {"id":3,"label":"Link 3","href":"/3"},
+      ],
+      "Buttons":[
+        {"id":1,"label":"Secondary", "size":"medium", "variant":"outlined", "color":"secondary","endIcon":"arrow-right"},
+        {"id":2,"label":"Primary", "size":"medium", "variant":"contained", "color":"primary","endIcon":"arrow-right"},
+      ]
+    } 
     }}>
     {Template.bind({})}
    </Story>

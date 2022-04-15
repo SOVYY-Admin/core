@@ -4,6 +4,7 @@ import { Icon } from '../icon/icon';
 import styles from "./button.module.css";
 
  export const Button = ({ color, variant, size, label, startIcon, endIcon, onClick, styling, ...props }) => {
+
   return (
     <button
       type="button"
@@ -16,9 +17,9 @@ import styles from "./button.module.css";
       `}
       {...props}
     >
-      {startIcon === undefined ? '' : <Icon icon={startIcon} size="flex" styling="mr-0.5em"/>}
+      {startIcon === null ? '' : <Icon icon={startIcon} size="flex" styling="mr-0.5em"/>}
       {label}
-      {endIcon === undefined ? '' : <Icon icon={endIcon} size="flex" styling="ml-0.5em"/>}
+      {endIcon === null ? '' : <Icon icon={endIcon} size="flex" styling="ml-0.5em"/>}
     </button>
   );
 };

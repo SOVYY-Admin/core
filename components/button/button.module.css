@@ -16,5 +16,5 @@
 
 .sy--variant--secondary-contained {@apply bg-neutral-200 text-black hover:bg-neutral-300 active:bg-neutral-400;}
 .sy--variant--secondary-outlined {@apply bg-none text-black border-2 border-neutral-200 hover:bg-neutral-200 active:border-neutral-300 active:bg-neutral-300;}
-.sy--variant--secondary-ghost {@apply bg-transparent text-black hover:bg-neutral-500/20 active:bg-neutral-500/30;}
+.sy--variant--secondary-ghost {@apply bg-transparent text-black hover:bg-neutral-500/20 active:bg-neutral-500/30 gdark:text-white;}
 
