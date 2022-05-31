@@ -1,6 +1,6 @@
 
 import { Canvas, Meta, Story } from '@storybook/addon-docs';
-import { Section } from '../components/section/section';
+import { Section } from '../components/components';
 
 <Meta title="Components/Layout/Section" component={Section} />
 
@@ -20,6 +20,9 @@ export const Template = (args) => <Section {...args}><div className="w-full py-2
     }}>
     {Template.bind({})}
    </Story>
+</Canvas>
+
+<Canvas>
        <Story 
     name="Medium"
     args={{ 
@@ -29,6 +32,9 @@ export const Template = (args) => <Section {...args}><div className="w-full py-2
     }}>
     {Template.bind({})}
    </Story>
+</Canvas>
+
+<Canvas>
           <Story 
     name="Large"
     args={{ 
@@ -38,10 +44,13 @@ export const Template = (args) => <Section {...args}><div className="w-full py-2
     }}>
     {Template.bind({})}
    </Story>
+</Canvas>
+
+<Canvas>
              <Story 
-    name="Full"
+    name="Screen"
     args={{ 
-  size: 'full',
+  size: 'screen',
   spacing: 'medium',
   styling: 'bg-blue-200',
     }}>

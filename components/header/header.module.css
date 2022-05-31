@@ -1,3 +1,7 @@
 /* header */
 
-.sy--header {@apply content-center p-5 bg-neutral-100 gdark:bg-neutral-900 rounded-3}
+.sy--header {@apply content-center p-5 bg-white gdark:bg-black}
+
+/* sticky */
+
+.sy--sticky {@apply fixed w-full}

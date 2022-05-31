@@ -4,7 +4,31 @@
 
 html, body {
     font-size: 16px;
-    @apply dark:bg-black
+    scroll-behavior: smooth;
+    @apply dark:bg-black font-body;
+}
+
+@font-face {
+    font-family: Chimaera;
+    src: url('../fonts/NFChimaeraSans-Regular.woff') format('woff');
+  }
+
+/* typography */
+
+p .d {@apply text-h2 lg:text-d font-bold mt-16 mb-8 first:mt-0 last:mb-0}
+h1 {@apply text-h3 lg:text-h1 font-bold mt-16 mb-8 first:mt-0 last:mb-0}
+h2 {@apply text-h4 lg:text-h2 font-bold mt-14 mb-7 first:mt-0 last:mb-0}
+h3 {@apply text-h5 lg:text-h3 font-bold mt-12 mb-6 first:mt-0 last:mb-0}
+h4 {@apply text-h6 lg:text-h4 font-bold mt-10 mb-5 first:mt-0 last:mb-0}
+h5 {@apply text-b lg:text-h5 font-bold mt-8 mb-4 first:mt-0 last:mb-0}
+h6 {@apply text-b lg:text-h6 font-bold mt-6 mb-3 first:mt-0 last:mb-0}
+
+p {@apply text-b2 lg:text-b mt-6 mb-3 first:mt-0 last:mb-0}
+p .b2 {@apply text-b2 mt-6 mb-3 first:mt-0 last:mb-0}
+p .c {@apply text-c mt-6 mb-3 first:mt-0 last:mb-0}
+
+.spline-watermark img {
+    display: none;
 }
 
 /* split js */
@@ -27,43 +51,138 @@ html, body {
 
 /* storybook-ui */
 
-.css-1wjen9k, .css-x6963h, .css-x6963h {
-    margin: 0px !important;
+/* sidebar */
+
+.css-1qwztpk {
+    padding: 24px;
 }
 
-.css-3zww90 {
-    background: ghostwhite !important;
-}
+/* subheader */
 
-.sidebar-subheading {
+.sidebar-subheading  {
     letter-spacing: normal !important;
-    margin: 0 !important;
-    padding: 2px 16px 2px 8px !important;
+    padding: 8px 8px 8px 8px !important;
+    margin: 12px 0 12px 0 !important;
+    font-size: 1rem !important;
+    background: none !important;
+    color: black !important;
+    border-radius: 4px;
+    align-items: center !important;
 }
 
-.css-1qkdgxq{
-    margin: 0 !important;
+.sidebar-subheading:hover {
+    background: rgba(0,0,0,0.1);
 }
+.sidebar-subheading button:focus, .sidebar-subheading span:first-of-type  {
+    color: black !important; 
+}
+
+.dark .sidebar-subheading button:focus, .dark .sidebar-subheading span:first-of-type  {
+    color: white !important;
+}
+
+.sidebar-subheading button {
+    margin: 0 !important;
+    align-items: center !important;
+}
+
+.dark .sidebar-subheading {
+    color: white !important;
+}
+
+/* sidebar-item */
 
 .sidebar-item {
-    padding: 8px !important;
-}
-
-.css-79elbk {
-    padding: 4px 8px !important;
-
-}
-
-.css-79elbk .sidebar-item {
-    padding: 4px!important;
-    padding-left: 32px!important;
+    padding: 8px 8px 8px 24px !important;
+    margin: 0 0 8px 0;
     border-radius: 4px;
+    font-size: 1rem !important;
+    align-items: center !important;
+    background: none !important;
 }
 
-#introduction--page {
-    padding: 8px 4px!important;
+.sidebar-item:hover, .sidebar-item[data-selected="true"]{
+    background: rgba(0,0,0,0.1) !important;
+    color: black !important;
 }
 
-.css-5k54e6-ButtonLink, .css-rsplmq-ButtonLink, .css-1jl0w7r-ButtonLink, .css-utd0w6-ButtonLink, .css-ojlz3t-ButtonLink {
+.dark .sidebar-item:hover, .dark .sidebar-item[data-selected="true"]{
+    background: rgba(255,255,255,0.1) !important;
+    color: white !important;
+}
+
+/* sidebar-item LVL 1 */
+
+.sidebar-item.css-y7thb4{
+    font-weight: 700 !important;   
+}
+
+
+/* sidebar-item LVL 2 */
+
+.sidebar-item.css-8skhtv{
+    padding: 8px 8px 8px 48px !important; 
+}
+
+.sidebar-item.css-8skhtv:hover{
+    background: rgba(0,0,0,0.1) !important;
+    color: black !important;
+}
+
+.dark .sidebar-item.css-8skhtv:hover{
+    background: rgba(255,255,255,0.1) !important;
+    color: white !important;
+}
+
+
+/* sidebar-item LVL 3 */
+
+.sidebar-item.css-c3viq7{
+    padding: 8px 8px 8px 56px !important; 
+}
+
+/* sidebar-item LVL 4 */
+
+.sidebar-item.css-1n5xmk4, .sidebar-item.css-16srfz7{
+    padding: 8px 8px 8px 72px !important;        
+}
+
+.sidebar-item.css-1n5xmk4:hover, .sidebar-item.css-1n5xmk4:focus, .sidebar-item.css-1n5xmk4[data-selected="true"] {
+    color: black !important;
+    font-weight: normal !important;
+}
+
+/* Icons */
+
+.sidebar-subheading span, .sidebar-subheading svg, .sidebar-item span, .sidebar-item svg{
+    margin: 0 8px 0 0 !important;
+    color: black !important;
+}
+
+.dark .sidebar-subheading span, .dark .sidebar-subheading svg, .dark .sidebar-item span, .dark .sidebar-item svg{
+    color: white !important;
+}
+
+/* Misc */
+
+.sidebar-item svg{
+    display: none;  
+}
+
+.css-1jmsxcy, .css-1mh4jql {
     display: none !important;
 } 
+
+.css-x6963h {
+    margin: 0 !important;
+}
+
+.dark .sbdocs-preview {
+    background: black;
+}
+
+/* iFrame Bug Fix */
+
+.dark iframe {
+    color-scheme: light;
+}

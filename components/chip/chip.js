@@ -1,6 +1,5 @@
 import React from "react";
 import PropTypes from 'prop-types';
-import FeatherIcon from "feather-icons-react";
 import styles from "./chip.module.css";
 
  export const Chip = ({ color, variant, size, label, styling, ...props }) => {
@@ -20,9 +19,9 @@ import styles from "./chip.module.css";
 };
 
 Chip.propTypes = {
-  color: PropTypes.oneOf(['default']),
+  color: PropTypes.oneOf(['neutral']),
   variant: PropTypes.oneOf(['contained', 'outlined']),
-  size: PropTypes.oneOf(['small', 'medium', 'large']),
+  size: PropTypes.oneOf(['small', 'medium']),
   label: PropTypes.string.isRequired,
   onClick: PropTypes.func,
   styling: PropTypes.string,
@@ -30,7 +29,7 @@ Chip.propTypes = {
 
 Chip.defaultProps = {
   label: 'Chip',
-  color: 'default',
+  color: 'neutral',
   variant: 'contained',
   size: 'small',
   onClick: undefined,

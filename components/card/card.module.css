@@ -1,0 +1,7 @@
+/* card */
+
+.sy--card {@apply shadow-1;}
+
+/* clickable */
+
+.sy--clickable {@apply hover:shadow-3 cursor-pointer;}

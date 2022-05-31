@@ -1,10 +1,23 @@
 
 import { Canvas, Meta, Story } from '@storybook/addon-docs';
-import { Text } from '../components/text/text';
+import { Text } from '../components/components';
 
 <Meta title="Components/DataDisplay/Text" component={Text} />
 
 export const Template = (args) => <Text {...args}>Lorem Ipsum</Text>;
+
+# Display
+
+<Canvas>
+    <Story 
+    name="Display"
+    args={{
+      tag: 'p',
+      variant: 'd',
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>
 
 # Headline 1
 

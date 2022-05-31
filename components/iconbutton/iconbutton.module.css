@@ -4,9 +4,9 @@
 
 /* size */ 
 
-.sy--size--small {@apply w-6 h-6 p-1;}
-.sy--size--medium {@apply w-9 h-9 p-2;}
-.sy--size--large {@apply w-12 h-12 p-3;}
+.sy--size--small {@apply w-24px h-24px;}
+.sy--size--medium {@apply w-32px h-32px;}
+.sy--size--large {@apply w-48px h-48px;}
 
 /* color & variant */
 
@@ -14,6 +14,6 @@
 .sy--variant--primary-outlined {@apply bg-none text-primary-500 border-2 border-primary-500 hover:bg-primary-500 hover:text-white active:border-primary-700 active:bg-primary-700;}
 .variant--primary-ghost {@apply bg-transparent text-black hover:text-primary-500 hover:bg-primary-500/20 active:bg-primary-500/30;}
 
-.sy--variant--secondary-contained {@apply bg-neutral-200 text-black hover:bg-neutral-300 active:bg-neutral-400;}
-.sy--variant--secondary-outlined {@apply bg-none text-black border-2 border-neutral-200 hover:bg-neutral-200 active:border-neutral-300 active:bg-neutral-300;}
-.sy--variant--secondary-ghost {@apply bg-transparent text-black hover:bg-neutral-500/20 active:bg-neutral-500/30;}
+.sy--variant--neutral-contained {@apply bg-neutral-200 text-black hover:bg-neutral-300 active:bg-neutral-400;}
+.sy--variant--neutral-outlined {@apply bg-none text-black border-2 border-neutral-200 hover:bg-neutral-200 active:border-neutral-300 active:bg-neutral-300 gdark:text-white gdark:border-neutral-800 gdark:hover:bg-neutral-800 gdark:active:border-neutral-700 gdark:active:bg-neutral-700;;}
+.sy--variant--neutral-ghost {@apply bg-transparent text-black hover:bg-black/10 active:bg-black/20 gdark:hover:bg-neutral-800 gdark:active:bg-neutral-900 gdark:text-white;}

@@ -1,0 +1,21 @@
+/*  template */
+
+.sy--hero {
+
+}
+
+.sy--hero::before {
+content: "";
+background: #ffffff, url(../../src/assets/noise.gif);
+position: absolute;
+top: 0px;
+right: 0px;
+bottom: 0px;
+left: 0px;
+opacity: 0;
+z-index: -100;
+}
+
+/* attribute */
+
+.sy--attribute--value {@apply text-black}

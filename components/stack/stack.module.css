@@ -16,5 +16,5 @@
 .sy--gap--2 {@apply gap-2;}
 .sy--gap--3 {@apply gap-3;}
 .sy--gap--4 {@apply gap-4;}
-.sy--gap--8 {@apply gap-8;}
-.sy--gap--12 {@apply gap-12;}
+.sy--gap--8 {@apply gap-4 md:gap-8;}
+.sy--gap--12 {@apply gap-4 md:gap-12;}

@@ -12,19 +12,18 @@ import styles from "./divider.module.css";
       ${styling}
       `}
       {...props}
-    >
-    </div>
+    />
   );
 };
 
 Divider.propTypes = {
   orientation: PropTypes.oneOf(['vertical', 'horizontal']),
-  color: PropTypes.oneOf(['default','primary']),
+  color: PropTypes.oneOf(['neutral','primary']),
   styling: PropTypes.string,
 };
 
 Divider.defaultProps = {
   orientation: 'horizontal',
-  color: 'default',
+  color: 'neutral',
   styling: '',
 };

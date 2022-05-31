@@ -25,7 +25,7 @@ Stack.propTypes = {
 };
 
 Stack.defaultProps = {
-  orientation: 'horizontal',
+  orientation: 'vertical',
   gap: '2',
   styling: '',
 };

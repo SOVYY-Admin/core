@@ -12,8 +12,8 @@ export const parameters = {
     dark: {
       base: 'dark ',
 
-      colorPrimary: '#4f4dff',
-      colorSecondary: '#4f4dff',
+      colorPrimary: 'white',
+      colorSecondary: 'white',
     
       // UI 
       appBg: '#0d0d0d',
@@ -31,7 +31,7 @@ export const parameters = {
     
       // Toolbar default and active colors
       barTextColor: 'white',
-      barSelectedColor: '#4f4dff',
+      barSelectedColor: 'white',
       barBg: '#191919',
     
       // Form colors
@@ -42,14 +42,14 @@ export const parameters = {
     
       brandTitle: 'SOVYY Design System',
       brandUrl: 'https://design.sovyy.com',
-      brandImage: 'https://sovyy.com/content/uploads/logo_65747cef2b.svg?293861.69999999925',
+      brandImage: 'https://sovyy.com/content/uploads/logo_Darkmode_e9cd9eb8ae.svg',
     },
     // Override the default light theme
     light: {
       base: 'light',
 
-      colorPrimary: 'blue',
-      colorSecondary: 'blue',
+      colorPrimary: 'black',
+      colorSecondary: 'black',
     
       // UI
       appBg: 'ghostwhite',
@@ -67,7 +67,7 @@ export const parameters = {
     
       // Toolbar default and active colors
       barTextColor: 'black',
-      barSelectedColor: 'blue',
+      barSelectedColor: 'black',
       barBg: 'white',
     
       // Form colors

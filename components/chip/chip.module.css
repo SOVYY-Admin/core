@@ -4,13 +4,12 @@
 
 /* size */ 
 
-.sy--size--small {@apply h-24px  text-button px-1;}
-.sy--size--medium {@apply h-32px  text-button px-2;}
-.sy--size--large {@apply h-48px  text-button px-3;}
+.sy--size--small {@apply h-24px  text-c px-1;}
+.sy--size--medium {@apply h-32px  text-b2 px-2;}
 
 /* color & variant */
 
-.sy--variant--default-contained {@apply bg-neutral-200 text-black}
+.sy--variant--neutral-contained {@apply bg-neutral-200 text-black;}
 
-.sy--variant--default-outlined {@apply text-neutral-400 border-2 border-neutral-200}
+.sy--variant--neutral-outlined {@apply text-neutral-400 border-2 border-neutral-200 gdark:text-neutral-200 gdark:border-neutral-400;}
        

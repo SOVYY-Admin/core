@@ -1,0 +1,35 @@
+/*  template */
+
+.sy--list {@apply bg-none text-black gdark:text-white}
+
+.sy--list li {@apply flex items-center rounded} 
+
+/* dots */
+
+.sy--dots {@apply list-disc list-inside}
+.sy--dots li {@apply list-item}
+
+/* size */
+
+.sy--size--none {@apply text-c px-0;}
+.sy--size--small {@apply text-c h-24px px-2;}
+.sy--size--medium {@apply text-b2 h-32px px-4;}
+.sy--size--large {@apply text-b h-48px px-6;}
+
+/* full */
+
+.sy--full {@apply w-full}
+
+/* variant */
+
+.sy--variant--contained {@apply bg-black/5;}
+.sy--variant--ghost {@apply bg-none;}
+.sy--variant--text {@apply bg-none;}
+
+/* clickable */
+
+.sy--clickable {@apply cursor-pointer;}
+
+.sy--clickable.sy--variant--contained {@apply hover:bg-black/10 active:bg-black/20 gdark:hover:bg-neutral-800 gdark:active:bg-neutral-900;}
+.sy--clickable.sy--variant--ghost {@apply hover:bg-black/10 active:bg-black/20 gdark:hover:bg-neutral-800 gdark:active:bg-neutral-900;}
+.sy--clickable.sy--variant--text {@apply hover:opacity-50;}

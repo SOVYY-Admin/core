@@ -4,19 +4,41 @@
 
 /* cols */
 
-.sy--cols--1 {@apply grid-cols-1 md:grid-cols-1 lg:grid-cols-1 ;}
-.sy--cols--2 {@apply grid-cols-1 md:grid-cols-2 lg:grid-cols-2;}
-.sy--cols--3 {@apply grid-cols-1 md:grid-cols-2 lg:grid-cols-3;}
-.sy--cols--4 {@apply grid-cols-1 md:grid-cols-2 lg:grid-cols-4;}
-.sy--cols--8 {@apply grid-cols-1 md:grid-cols-2 lg:grid-cols-8;}
-.sy--cols--12 {@apply grid-cols-1 md:grid-cols-2 lg:grid-cols-12;}
+.sy--cols--1 {@apply grid-cols-1;}
+.sy--cols--2 {@apply grid-cols-2;}
+.sy--cols--3 {@apply grid-cols-3;}
+.sy--cols--4 {@apply grid-cols-4;}
+.sy--cols--8 {@apply grid-cols-8;}
+.sy--cols--12 {@apply grid-cols-12;}
+
+.sy--mdcols--1 {@apply md:grid-cols-1;}
+.sy--mdcols--2 {@apply md:grid-cols-2;}
+.sy--mdcols--3 {@apply md:grid-cols-3;}
+.sy--mdcols--4 {@apply md:grid-cols-4;}
+.sy--mdcols--8 {@apply md:grid-cols-8;}
+.sy--mdcols--12 {@apply md:grid-cols-12;}
+
+.sy--lgcols--1 {@apply lg:grid-cols-1;}
+.sy--lgcols--2 {@apply lg:grid-cols-2;}
+.sy--lgcols--3 {@apply lg:grid-cols-3;}
+.sy--lgcols--4 {@apply lg:grid-cols-4;}
+.sy--lgcols--8 {@apply lg:grid-cols-8;}
+.sy--lgcols--12 {@apply lg:grid-cols-12;}
+
+.sy--xlcols--1 {@apply xl:grid-cols-1;}
+.sy--xlcols--2 {@apply xl:grid-cols-2;}
+.sy--xlcols--3 {@apply xl:grid-cols-3;}
+.sy--xlcols--4 {@apply xl:grid-cols-4;}
+.sy--xlcols--8 {@apply xl:grid-cols-8;}
+.sy--xlcols--12 {@apply xl:grid-cols-12;}
 
 /* gap */
 
-.sy--gap--0 {@apply gap-0;}
-.sy--gap--1 {@apply gap-1;}
-.sy--gap--2 {@apply gap-2;}
-.sy--gap--3 {@apply gap-3;}
-.sy--gap--4 {@apply gap-4;}
-.sy--gap--8 {@apply gap-8;}
-.sy--gap--12 {@apply gap-12;}
+.sy--gap--0 {@apply gap-0 gap-y-0;}
+.sy--gap--1 {@apply gap-1 gap-y-1;}
+.sy--gap--2 {@apply gap-2 gap-y-2;}
+.sy--gap--3 {@apply gap-3 gap-y-3;}
+.sy--gap--4 {@apply gap-4 gap-y-4;}
+.sy--gap--8 {@apply gap-8 gap-y-4;}
+.sy--gap--12 {@apply gap-12 gap-y-4;}
+.sy--gap--16 {@apply gap-16 gap-y-4;}

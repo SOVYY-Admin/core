@@ -1,0 +1,7 @@
+/*  template */
+
+.sy--draft {@apply text-black}
+
+/* attribute */
+
+.sy--attribute--value {@apply text-black}

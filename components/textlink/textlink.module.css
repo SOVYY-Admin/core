@@ -1,7 +1,7 @@
 /* link */
 
-.sy--textlink {@apply text-black hover:underline}
+.sy--textlink {@apply text-black gdark:text-white h-fit font-semibold hover:underline;}
 
 /* inline */
 
-.sy--inline {@apply text-black underline}
+.sy--inline {@apply underline hover:opacity-50;}

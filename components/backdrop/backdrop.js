@@ -21,6 +21,6 @@ Backdrop.propTypes = {
 
 Backdrop.defaultProps = {
   color: 'black',
-  opacity: '50',
+  opacity: 'o50',
   styling: '',
 };

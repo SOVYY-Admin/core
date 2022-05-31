@@ -1,44 +1,24 @@
-import { Button, Chip, Section, Divider, Grid, Header, Icon, IconButton, Stack, TextLink, Text } from '..//core';
 
-<Meta title="Introduction"/>
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import Introduction from '../pages/storybook/introduction';
 
-<Section width="full" spacing="none" styling="bg-primary-500 p-4 md:p-8 text-white"> 
-    <Text variant="h2">Welcome to SOVYY Design System</Text>
-</Section>
+<Meta 
+    title="Introduction" 
+    component={Introduction}
+    parameters={{
+        layout: 'fullscreen',
+    }}
+/>
 
-<Section width="full" spacing="medium" styling="px-4 md:px-8"> 
+export const Template = (args) => <Introduction {...args} />;
 
-# Welcome to SOVYY Design System
+# Introduction
 
-Storybook helps you build UI components in isolation from your app's business logic, data, and context.
-That makes it easy to develop hard-to-reach states. Save these UI states as **stories** to revisit during development, testing, or QA.
-
-Browse example stories now by navigating to them in the sidebar.
-View their code in the `src/stories` directory to learn how they work.
-We recommend building UIs with a [**component-driven**](https://componentdriven.org) process starting with atomic components and ending with pages.
-
-</Section>
-
-<Section width="full" spacing="medium" styling="px-4 md:px-8 bg-gray-100"> 
-    <Grid cols="3" gap="4">
-        <div className="bg-white p-4 shadow rounded-3"> 
-            <Text variant="h6">Lorem Ipsum</Text>
-            <Text variant="b2">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-            </Text>
-        </div>
-    <div className="bg-white p-4 shadow rounded-3"> 
-            <Text variant="h6">Lorem Ipsum</Text>
-            <Text variant="b2">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-            </Text>
-        </div>
-        <div className="bg-white p-4 shadow rounded-3"> 
-            <Text variant="h6">Lorem Ipsum</Text>
-            <Text variant="b2">
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua.
-            </Text>
-        </div>
-    </Grid>
-</Section>
-
+<Canvas>
+    <Story 
+    name="Introduction"
+    args={{
+    }}>
+    {Template.bind({})}
+   </Story>
+</Canvas>

@@ -1,7 +1,7 @@
 /* Change base values */
 
-const textbase = 1.33 /* base of typography */
-const textscale = 1.33 /* scale of typography */
+const textbase = 1.5 /* base of typography */
+const textscale = 1.2 /* scale of typography */
 
 const radiusbase = 0.25 /* base of border-radius */
 
@@ -12,6 +12,7 @@ module.exports = {
     './pages/**/*.{js,jsx,ts,tsx,mdx}',
     './stories/**/*.{js,jsx,ts,tsx,mdx}',
     './components/**/*.{js,jsx,ts,tsx,mdx}',
+    './modules/**/*.{js,jsx,ts,tsx,mdx}',
   ],
   theme: {
     screens: {
@@ -21,30 +22,54 @@ module.exports = {
       xl: '1440px',
     },
     fontFamily: {
-      display: ['Open Sans',],
-      body: ['Open Sans',],
+      display: ['Chimaera',],
+      body: ['Chimaera',],
     },
     fontSize: {
-      h1: [`${textbase * (textscale ** 7)}rem`,{lineHeight: `${textbase * (textscale ** 7) * 1.2}rem`,},],
-      h2: [`${textbase * (textscale ** 6)}rem`,{lineHeight: `${textbase * (textscale ** 6) * 1.2}rem`,},],
-      h3: [`${textbase * (textscale ** 5)}rem`,{lineHeight: `${textbase * (textscale ** 5) * 1.2}rem`,},],
-      h4: [`${textbase * (textscale ** 4)}rem`,{lineHeight: `${textbase * (textscale ** 4) * 1.3}rem`,},],
-      h5: [`${textbase * (textscale ** 3)}rem`,{lineHeight: `${textbase * (textscale ** 3) * 1.3}rem`,},],
-      h6: [`${textbase * (textscale ** 2)}rem`,{lineHeight: `${textbase * (textscale ** 2) * 1.3}rem`,},],
-      body: [`${textbase}rem`,{lineHeight: `${textbase * 1.5}rem`,},],
-      body2: [`${textbase / textscale}rem`,{lineHeight: `${textbase / textscale * 1.5}rem`,},],
-      caption: [`${textbase / (textscale ** 2)}rem`, {lineHeight: `${textbase / (textscale ** 2) * 1.5}rem`,},],
+      d: [`${textbase * (textscale ** 10)}rem`,{lineHeight: `${textbase * (textscale ** 10) * 1.1}rem`,},],
+      h1: [`${textbase * (textscale ** 7)}rem`,{lineHeight: `${textbase * (textscale ** 7) * 1.1}rem`,},],
+      h2: [`${textbase * (textscale ** 6)}rem`,{lineHeight: `${textbase * (textscale ** 6) * 1.1}rem`,},],
+      h3: [`${textbase * (textscale ** 5)}rem`,{lineHeight: `${textbase * (textscale ** 5) * 1.1}rem`,},],
+      h4: [`${textbase * (textscale ** 4)}rem`,{lineHeight: `${textbase * (textscale ** 4) * 1.2}rem`,},],
+      h5: [`${textbase * (textscale ** 3)}rem`,{lineHeight: `${textbase * (textscale ** 3) * 1.2}rem`,},],
+      h6: [`${textbase * (textscale ** 2)}rem`,{lineHeight: `${textbase * (textscale ** 2) * 1.2}rem`,},],
+      b: [`${textbase}rem`,{lineHeight: `${textbase * 1.5}rem`,},],
+      b2: [`${textbase / textscale}rem`,{lineHeight: `${textbase / textscale * 1.5}rem`,},],
+      c: [`${textbase / (textscale ** 2)}rem`, {lineHeight: `${textbase / (textscale ** 2) * 1.5}rem`,},],
       button: [`${textbase / textscale}rem`,{lineHeight: `${textbase}rem`,},],
+    },
+    fontWeight: {
+      thin: '500',
+      extralight: '500',
+      light: '500',
+      normal: '500',
+      medium: '500',
+      semibold: '500',
+      bold: '500',
+      extrabold: '500',
+      black: '700',
     },
     borderRadius: {
       'none': '0',
-      DEFAULT: '0.25rem',
+      DEFAULT: `${radiusbase}rem`,
       '2': `${radiusbase * 2}rem`,
       '3': `${radiusbase * 3}rem`,
       '4': `${radiusbase * 4}rem`,
       '8': `${radiusbase * 8}rem`,
       '12': `${radiusbase * 12}rem`,
       '16': `${radiusbase * 16}rem`,
+    },
+    boxShadow: {
+      '1': '0 1px 1px 0 rgba(0,0,0,0.14), 0 2px 1px -1px rgba(0,0,0,0.12), 0 1px 3px 0 rgba(0,0,0,0.20)',
+      '2': '0 2px 2px 0 rgba(0,0,0,0.14), 0 3px 1px -2px rgba(0,0,0,0.12), 0 1px 5px 0 rgba(0,0,0,0.20)',
+      '3': ' 0 3px 4px 0 rgba(0,0,0,0.14), 0 3px 3px -2px rgba(0,0,0,0.12), 0 1px 8px 0 rgba(0,0,0,0.20)',
+      '4': '0 4px 5px 0 rgba(0,0,0,0.14), 0 1px 10px 0 rgba(0,0,0,0.12), 0 2px 4px -1px rgba(0,0,0,0.20)',
+      '6': '0 6px 10px 0 rgba(0,0,0,0.14), 0 1px 18px 0 rgba(0,0,0,0.12), 0 3px 5px -1px rgba(0,0,0,0.20)',
+      '8': '0 8px 10px 1px rgba(0,0,0,0.14), 0 3px 14px 2px rgba(0,0,0,0.12), 0 5px 5px -3px rgba(0,0,0,0.20)',
+      '12': '0 12px 17px 2px rgba(0,0,0,0.14), 0 5px 22px 4px rgba(0,0,0,0.12), 0 7px 8px -4px rgba(0,0,0,0.20)',
+      '16': '0 16px 24px 2px rgba(0,0,0,0.14), 0 6px 30px 5px rgba(0,0,0,0.12), 0 8px 10px -5px rgba(0,0,0,0.20)',
+      '24': '0 24px 38px 3px rgba(0,0,0,0.14), 0 9px 46px 8px rgba(0,0,0,0.12), 0 11px 15px -7px rgba(0,0,0,0.20)',
+      none: 'none',
     },
     extend: {
       zIndex: {
@@ -72,12 +97,26 @@ module.exports = {
         '1.25em': '1.25em',
         '1.5em': '1.5em',
         '2em': '2em',
+        '16px': '16px',
         '24px': '24px',
         '32px': '32px',
         '48px': '48px',
       },
       minHeight: {
         'image': '240px',
+        '240': '240px',
+        '320': '320px',
+        '480': '480px',
+        '720': '720px',
+        '960': '960px',
+      },
+      maxWidth: {
+        '1/4': '25%',
+        '1/2': '50%',
+        '3/4': '75%',
+        '480': '480px',
+        '720': '720px',
+        '960': '960px',
       },
       width: {
         '0.5em': '0.5em',
@@ -85,6 +124,10 @@ module.exports = {
         '1.25em': '1.25em',
         '1.5em': '1.5em',
         '2em': '2em',
+        '16px': '16px',
+        '24px': '24px',
+        '32px': '32px',
+        '48px': '48px',
       },
       margin: {
         '0.5em': '0.5em',

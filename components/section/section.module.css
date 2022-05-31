@@ -1,17 +1,18 @@
 /* stack */
 
-.sy--section {@apply m-auto}
+.sy--section {@apply m-auto p-6}
 
 /* size */
 
 .sy--size--small {@apply max-w-screen-md;}
 .sy--size--medium {@apply max-w-screen-lg;}
 .sy--size--large {@apply max-w-screen-xl;}
-.sy--size--full {@apply max-w-full;}
+.sy--size--screen {@apply max-w-full;}
 
 /* spacing */
 
 .sy--spacing--none {@apply py-0;}
-.sy--spacing--small {@apply py-12;}
-.sy--spacing--medium {@apply py-24;}
-.sy--spacing--large {@apply py-48;}
+.sy--spacing--small {@apply py-12 md:py-12;}
+.sy--spacing--medium {@apply py-12 md:py-24;}
+.sy--spacing--large {@apply py-24 md:py-48;}
+.sy--spacing--screen {@apply flex h-screen items-center;}

@@ -1,0 +1,3 @@
+/*  drawer */
+
+.sy--drawer {@apply z-50 fixed top-0 right-0 w-96 h-full bg-white gdark:bg-black}

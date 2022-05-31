@@ -1,7 +1,7 @@
 
 import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
-import { Button } from '../components/button/button';
+import { Button } from '../components/components';
 
 <Meta title="Components/DataInput/Button" component={Button} />
 
@@ -22,9 +22,8 @@ import { Button } from '../components/button/button';
 
 ## Colors
 
-
 <Canvas>
-    <Story 
+  <Story 
     name="Primary"
     args={{ 
       label: 'primary',
@@ -36,12 +35,12 @@ import { Button } from '../components/button/button';
       onClick: undefined,
     }}>
     {Template.bind({})}
-   </Story>
+  </Story>
   <Story 
-    name="Secondary"
+    name="Neutral"
     args={{ 
-      label: 'secondary',
-      color: 'secondary',
+      label: 'neutral',
+      color: 'neutral',
       variant: 'contained',
       size: 'medium',
       startIcon: '',
@@ -54,7 +53,7 @@ import { Button } from '../components/button/button';
 
 ## Sizes
 
-- medium is the secondary size and should cover most of the cases.
+- medium is the neutral size and should cover most of the cases.
 - Use large size in special cases to highlight the button.
 - Use small in tight spaces.
 
@@ -63,7 +62,7 @@ import { Button } from '../components/button/button';
     name="Small"
     args={{ 
       label: 'small',
-      color: 'secondary',
+      color: 'neutral',
       variant: 'contained',
       size: 'small',
       startIcon: '',
@@ -76,7 +75,7 @@ import { Button } from '../components/button/button';
     name="Medium"
     args={{ 
       label: 'medium',
-      color: 'secondary',
+      color: 'neutral',
       variant: 'contained',
       size: 'medium',
       startIcon: '',
@@ -89,7 +88,7 @@ import { Button } from '../components/button/button';
     name="Large"
     args={{ 
       label: 'large',
-      color: 'secondary',
+      color: 'neutral',
       variant: 'contained',
       startIcon: '',
       endIcon: '',
@@ -103,7 +102,7 @@ import { Button } from '../components/button/button';
 
 ## Variants
 
-- secondary variant and should cover most of the cases.
+- neutral variant and should cover most of the cases.
 - Use the Primary variant to highlight the most important action.
 
 <Canvas>
@@ -111,7 +110,7 @@ import { Button } from '../components/button/button';
     name="Contained"
     args={{ 
       label: 'contained',
-      color: 'secondary',
+      color: 'neutral',
       variant: 'contained',
       size: 'medium',
       startIcon: '',
@@ -124,7 +123,7 @@ import { Button } from '../components/button/button';
     name="Outlined"
     args={{ 
       label: 'outlined',
-      color: 'secondary',
+      color: 'neutral',
       variant: 'outlined',
       size: 'medium',
       startIcon: '',
@@ -142,7 +141,7 @@ import { Button } from '../components/button/button';
     name="startIcon"
     args={{ 
       label: 'startIcon',
-      color: 'secondary',
+      color: 'neutral',
       variant: 'contained',
       size: 'medium',
       startIcon: 'image',
@@ -155,7 +154,7 @@ import { Button } from '../components/button/button';
     name="endIcon"
     args={{ 
       label: 'endIcon',
-      color: 'secondary',
+      color: 'neutral',
       variant: 'contained',
       size: 'medium',
       startIcon: '',

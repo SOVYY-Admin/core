@@ -17,12 +17,12 @@ import styles from "./text.module.css";
 
 Text.propTypes = {
   tag: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'p']),
-  variant: PropTypes.oneOf(['h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'b', 'b2', 'c']),
+  variant: PropTypes.oneOf(['d','h1', 'h2', 'h3', 'h4', 'h5', 'h6', 'b', 'b2', 'c']),
   styling: PropTypes.string,
 };
 
 Text.defaultProps = {
   tag: 'p',
-  variant: 'body',
+  variant: 'b',
   styling: ''
 };

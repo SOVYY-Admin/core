@@ -1,10 +1,10 @@
 /* icon */
 
-.sy--icon {}
+.sy--icon {@apply text-black gdark:text-white}
 
 /* size */
 
-.sy--size--flex {@apply w-1.25em h-1.25em;}
-.sy--size--small {@apply w-4 h-4;}
-.sy--size--medium {@apply w-6 h-6;}
-.sy--size--large {@apply w-8 h-8;}
+.sy--size--flex {@apply w-1em h-1em;}
+.sy--size--small {@apply w-16px h-16px;}
+.sy--size--medium {@apply w-24px h-24px;}
+.sy--size--large {@apply w-32px h-32px;}

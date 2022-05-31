@@ -1,6 +1,21 @@
 
 import { Canvas, Meta, Story } from '@storybook/addon-docs';
-import { Header } from '../components/header/header';
+import { Header } from '../components/components';
+
+// import api
+import { fetchAPI, getStrapiURL } from "/api/strapi";
+
+
+// fetch data
+export async function getStaticProps({ }) {
+  // get content from our api
+  const header = await fetchAPI(`/header`);
+  // return content from our api 
+  return {
+    props: { header },
+    revalidate: 600,
+  };
+}
 
 <Meta title="Components/Navigation/Header" component={Header} />
 
@@ -13,24 +28,78 @@ export const Template = (args) => <Header {...args} />;
     name="Default"
     args={{
     data: {
-      "Logo":{
-        "url": "/uploads/logo_42e0459919.svg",
-        "href":"/logo"
+  "id": 1,
+  "published_at": "2022-04-15T14:31:49.144Z",
+  "created_at": "2022-04-15T14:31:47.855Z",
+  "updated_at": "2022-05-14T16:18:33.708Z",
+  "linkList": {
+    "id": 2,
+    "label": "",
+    "links": [
+      {
+        "id": 7,
+        "label": "Services",
+        "href": "/services"
       },
-      "LogoDarkmode":{
-        "url": "/uploads/logo_65747cef2b.svg",
-        "href":"/logo"
+      {
+        "id": 5,
+        "label": "Projekte",
+        "href": "/#2"
       },
-      "Links":[
-      {"id":1,"label":"Link 1","href":"/1"},
-      {"id":2,"label":"Link 2","href":"/2"},
-      {"id":3,"label":"Link 3","href":"/3"},
-      ],
-      "Buttons":[
-        {"id":1,"label":"Secondary", "size":"medium", "variant":"outlined", "color":"secondary","endIcon":"arrow-right"},
-        {"id":2,"label":"Primary", "size":"medium", "variant":"contained", "color":"primary","endIcon":"arrow-right"},
-      ]
-    } 
+      {
+        "id": 8,
+        "label": "Team",
+        "href": "/team"
+      }
+    ]
+  },
+  "actionButton": {
+    "id": 3,
+    "label": "Schreib uns",
+    "href": "/kontakt"
+  },
+  "utilityButtons": [
+    
+  ],
+  "Logo": {
+    "id": 1,
+    "name": "logo.svg",
+    "alternativeText": "",
+    "caption": "",
+    "width": 168,
+    "height": 24,
+    "formats": null,
+    "hash": "logo_42e0459919",
+    "ext": ".svg",
+    "mime": "image/svg+xml",
+    "size": 3.73,
+    "url": "/uploads/logo_42e0459919.svg",
+    "previewUrl": null,
+    "provider": "local",
+    "provider_metadata": null,
+    "created_at": "2022-04-13T22:33:45.792Z",
+    "updated_at": "2022-04-13T22:33:53.093Z"
+  },
+  "LogoDarkmode": {
+    "id": 4,
+    "name": "logoDarkmode.svg",
+    "alternativeText": "",
+    "caption": "",
+    "width": 168,
+    "height": 24,
+    "formats": null,
+    "hash": "logo_Darkmode_e9cd9eb8ae",
+    "ext": ".svg",
+    "mime": "image/svg+xml",
+    "size": 3.73,
+    "url": "/uploads/logo_Darkmode_e9cd9eb8ae.svg",
+    "previewUrl": null,
+    "provider": "local",
+    "provider_metadata": null,
+    "created_at": "2022-04-24T12:39:47.937Z",
+    "updated_at": "2022-04-24T12:39:47.958Z"
+  }
+}
     }}>
     {Template.bind({})}
    </Story>

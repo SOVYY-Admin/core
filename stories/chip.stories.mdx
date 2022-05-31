@@ -1,7 +1,7 @@
 
 import { Canvas, Meta, Story } from '@storybook/addon-docs';
 
-import { Chip } from '../components/chip/chip';
+import { Chip } from '../components/components';
 
 <Meta title="Components/DataDisplay/Chip" component={Chip} />
 
@@ -9,16 +9,32 @@ export const Template = (args) => <Chip {...args} />;
 
 # Chip
 
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+# Size
+
 <Canvas>
-    <Story 
-    name="Default"
-    args={{ 
+  <Story 
+  name="small"
+  args={{ 
   label: 'Chip', 
-  color: 'default',
+  color: 'neutral',
+  variant: 'contained',
+  size: 'small',
+  onClick: undefined,
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story 
+  name="medium"
+  args={{ 
+  label: 'Chip', 
+  color: 'neutral',
   variant: 'contained',
   size: 'medium',
   onClick: undefined,
     }}>
     {Template.bind({})}
-   </Story>
+  </Story>
 </Canvas>

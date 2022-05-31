@@ -1,0 +1,102 @@
+
+import { Canvas, Meta, Story } from '@storybook/addon-docs';
+import { List } from '../components/components';
+
+<Meta title="Components/DataDisplay/List" component={List} />
+
+export const Template = (args) => <List {...args} />;
+
+# List
+
+Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, 
+sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+
+# Variant
+
+<Canvas>
+  <Story 
+    name="ghost"
+    args={{
+    data: {
+    "label": "ghost",
+    "links":[
+    {"id":1,"label":"ghost 1","href":"/1"},
+    {"id":2,"label":"ghost 2","href":"/2"},
+    {"id":3,"label":"ghost 3","href":"/3"},
+    ]
+    },
+    size: 'small',
+    variant: 'ghost',
+    dots: false,
+    stackOrientation: 'vertical',
+    stackGap: '2',
+    styling: '',
+    }}>
+    {Template.bind({})}
+  </Story>
+  <Story 
+    name="contained"
+    args={{
+    data: {
+    "label": "contained",
+    "links":[
+    {"id":1,"label":"contained 1","href":"/1"},
+    {"id":2,"label":"contained 2","href":"/2"},
+    {"id":3,"label":"contained 3","href":"/3"},
+    ]
+    },
+    size: 'small',
+    variant: 'contained',
+    dots: false,
+    stackOrientation: 'vertical',
+    stackGap: '2',
+    styling: '',
+    }}>
+    {Template.bind({})}
+  </Story>
+    <Story 
+    name="text"
+    args={{
+    data: {
+    "label": "text",
+    "links":[
+    {"id":1,"label":"text 1","href":"/1"},
+    {"id":2,"label":"text 2","href":"/2"},
+    {"id":3,"label":"text 3","href":"/3"},
+    ]
+    },
+    size: 'small',
+    variant: 'text',
+    dots: false,
+    stackOrientation: 'vertical',
+    stackGap: '2',
+    styling: '',
+    }}>
+    {Template.bind({})}
+  </Story>
+</Canvas>
+
+# Dots
+
+<Canvas>
+  <Story
+    name="dots"
+    args={{
+    data: {
+    "label": "Label",
+    "links":[
+    {"id":1,"label":"Item 1","href":""},
+    {"id":2,"label":"Item 2","href":""},
+    {"id":3,"label":"Item 3","href":""},
+    ]
+    },
+    size: 'small',
+    variant: 'text',
+    dots: true,
+    stackOrientation: 'vertical',
+    stackGap: '2',
+    styling: '',
+    }}>
+    {Template.bind({})}
+</Story>
+</Canvas>

@@ -1,11 +1,11 @@
 
 import { Canvas, Meta, Story } from '@storybook/addon-docs';
 import { IMG } from '../components/img/img';
-import { Backdrop } from '../components/backdrop/backdrop';
+import { Backdrop } from '../components/components';
 
 <Meta title="Components/Utility/Backdrop" component={Backdrop} />
 
-export const Template = (args) =><div className="h-screen"><IMG styling="z-n" /><Backdrop {...args} /></div>;
+export const Template = (args) =><Backdrop {...args} styling="h-screen"/>;
 
 # Backdrop
 
